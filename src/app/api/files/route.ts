@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-
+export const runtime = "edge";
 const mockFiles = [
   { id: '1', name: 'Untitled document', type: 'document', modified: 'Sep 15, 2024', owner: 'me', location: 'My Drive', url: 'https://docs.google.com/document/d/e/2PACX-1vT7XCfK2xY5GKPtBb2MuZvakO3xbZTbzNNGqVY7W7sxMOGjPITWdqOFnkb1iGbWuQ/pub?embedded=true' },
   { id: '2', name: '24 Why Consent Should Be Removed.mp4', type: 'video', modified: 'Aug 26, 2024', owner: 'senseijizz9', location: 'Jizz vids', url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4' },
