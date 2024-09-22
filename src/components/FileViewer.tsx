@@ -20,7 +20,7 @@ const FileViewer: React.FC<FileViewerProps> = ({ file, onClose }) => {
   const renderContent = () => {
     switch (file.type) {
       case 'image':
-        return <img src={file.url} alt={file.name} className="max-w-full max-h-[80vh] object-contain" />
+        return <Image src={file.url} alt={file.name} className="max-w-full max-h-[80vh] object-contain" layout='fill' />
       case 'video':
         return (
           <video controls className="max-w-full max-h-[80vh]">

@@ -32,10 +32,6 @@ interface File {
   url: string
 }
 
-interface Props {
-  filteredFiles: File[]
-}
-
 export default function DriveContent() {
   const [files, setFiles] = useState<File[]>([])
   const [searchTerm, setSearchTerm] = useState('')

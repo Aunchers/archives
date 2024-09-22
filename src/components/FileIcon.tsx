@@ -1,4 +1,4 @@
-import { File, FileText, Image, Video, Music, Folder } from 'lucide-react'
+import { File, FileText, Video, Music, Folder } from 'lucide-react'
 
 type FileIconProps = {
   type: 'folder' | 'image' | 'video' | 'audio' | 'document' | 'default'
@@ -10,7 +10,7 @@ const FileIcon = ({ type, className = '' }: FileIconProps) => {
     case 'folder':
       return <Folder className={`text-blue-500 ${className}`} />
     case 'image':
-      return <Image className={`text-green-500 ${className}`} />
+      return <img className={`text-green-500 ${className}`} alt={`${className}`} />
     case 'video':
       return <Video className={`text-red-500 ${className}`} />
     case 'audio':
